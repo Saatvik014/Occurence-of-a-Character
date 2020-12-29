@@ -1,0 +1,25 @@
+import java.util.*;
+public class Occurence {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str="Saatvik";
+        System.out.print("Enter character that you want to know");
+        char ch=sc.next().charAt(0); //User input of the Character
+        int count=0; //Initializing a counter variable to count number of occurences
+        int n=str.length();
+        for(int loopOnPower=0;loopOnPower<n;loopOnPower++)
+        {
+            if(ch==str.charAt(loopOnPower))
+            {
+                count++;
+            }
+        }
+        System.out.println("Occurence of the character in the string is "+count); //Printing the occurence
+    }
+}
+
+
+
+
+
+![Screenshot (182)](https://user-images.githubusercontent.com/74056455/103310770-6225bc00-4a3e-11eb-88dc-158994849569.png)
